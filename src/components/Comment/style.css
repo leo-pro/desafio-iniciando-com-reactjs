@@ -1,0 +1,19 @@
+.comment{
+  display: flex;
+  margin: 1% 0;
+}
+
+.comment-header #user-facebook{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.comment-content{
+  margin-left: 2%;
+  margin-top: 0.5%;
+  padding: 1.5%;
+  background-color: #f7f7f7;
+  border-radius: 17px;
+  text-align: justify;
+}

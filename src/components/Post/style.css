@@ -1,0 +1,35 @@
+.post{
+  width: 100%;
+  border-radius: 5px;
+  padding: 3%;
+  margin: 2% 0;
+  -webkit-box-shadow: 0px 0px 18px -2px rgba(214,214,214,1);
+  -moz-box-shadow: 0px 0px 18px -2px rgba(214,214,214,1);
+  box-shadow: 0px 0px 18px -2px rgba(214,214,214,1);
+}
+
+.post-header{
+  display: flex;
+  justify-content: start;
+}
+
+.post-header #user-facebook{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-header .post-perfil-user{
+  margin-left: 1.5%;
+}
+
+.post-header .post-perfil-user span{
+  font-size: 0.8em;
+  color: #a8a6a6;
+}
+
+.post-content{
+  margin: 3% 0;
+  font-size: 1.1em;
+  text-align: justify;
+}

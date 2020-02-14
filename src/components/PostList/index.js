@@ -11,20 +11,27 @@ class TechList extends Component{
         id: 1,
         author: {
           name: 'Leonardo Alves',
-          avatar: 'http://localhost:8080/tmp/foto-perfil.png'
+          avatar: 'https://avatars0.githubusercontent.com/u/14790547?s=460&v=4'
         },
         date: '14 Fev 2020',
-        content: 'Pessoal, alguem sabe se a Rocketseat está contratando?',
+        content: 'Salve galera! Testando aqui o app que desenvolvi com ReactJS.',
         comments: [
           {
             id: 1,
             author: {
-            name: 'Diego Fernandes',
-            avatar: 'http://localhost:8080/tmp/foto-perfil.png'
+            name: 'Lucas Tangi',
+            avatar: 'https://avatars1.githubusercontent.com/u/42376741?s=100&v=4'
             },
-            content: 'Conteúdo do Comentário',
+            content: 'Ficou brabo!',
           },
-          
+          {
+            id: 2,
+            author: {
+            name: 'Vinicius Cesar',
+            avatar: 'https://avatars0.githubusercontent.com/u/31235308?s=100&v=4'
+            },
+            content: 'Sensacional!',
+          },
         ]
       }
     ]
@@ -35,7 +42,9 @@ class TechList extends Component{
 
     return(
       <div className="post-list">
-        <Post />
+        { 
+          this.state.posts.map(post => <Post key={post.id} post={post}/>)
+        }
       </div>
     );
   }

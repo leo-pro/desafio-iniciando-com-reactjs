@@ -1,6 +1,6 @@
 .comment{
   display: flex;
-  margin: 1% 0;
+  margin: 1% 0;  
 }
 
 .comment-header #user-facebook{
@@ -10,6 +10,7 @@
 }
 
 .comment-content{
+  width: 100%;
   margin-left: 2%;
   margin-top: 0.5%;
   padding: 1.5%;

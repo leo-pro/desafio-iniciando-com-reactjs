@@ -5,24 +5,22 @@ import Comment from '../Comment';
 import './style.css';
 import userFacebook from '../../assets/user-facebook.png';
 
-function Post(){
+function Post({ post }){
   return(
     <div className="post">
       <div className="post-header">
-        <img src={userFacebook} alt="" id="user-facebook"/>
+        <img src={post.author.avatar == ''? userFacebook : post.author.avatar} alt="" id="user-facebook"/>
         <div className="post-perfil-user">
-          <h4>Leonardo Alves</h4>
-          <span>14 Fev 2020</span>
+          <h4>{post.author.name}</h4>
+          <span>{post.date}</span>
         </div>
       </div>
       <div className="post-content">
         <p>
-          Pessoal, alguem sabe se a Rocketseat está contratando?
+          { post.content }
         </p>
       </div>
-      <Comment/>
-      <Comment/>
-      <Comment/>
+      { post.comments.map(comment => <Comment key={comment.id} comment={comment}/>)}
     </div>
   );
 }
